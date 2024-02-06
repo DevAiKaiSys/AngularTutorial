@@ -40,7 +40,15 @@ export class HomeComponent {
     this.filteredLocationList = this.housingLocationList;
   }
 
-  filterResults(arg0: string) {
-    throw new Error('Method not implemented.');
+  filterResults(text: string) {
+    if (!text) {
+      this.filteredLocationList = this.housingLocationList;
+      return;
+    }
+
+    this.filteredLocationList = this.housingLocationList.filter(
+      (housingLocation) =>
+        housingLocation?.city.toLowerCase().includes(text.toLowerCase())
+    );
   }
 }
