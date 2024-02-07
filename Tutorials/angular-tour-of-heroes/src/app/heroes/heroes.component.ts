@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { Hero } from '../hero';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-heroes',
-  standalone: true,
-  imports: [CommonModule],
+  // standalone: true,
+  // imports: [CommonModule],
   templateUrl: './heroes.component.html',
   // styleUrl: './heroes.component.css'
   styleUrls: ['./heroes.component.css'],
