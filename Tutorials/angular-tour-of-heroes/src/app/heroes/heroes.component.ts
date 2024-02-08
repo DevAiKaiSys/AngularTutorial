@@ -1,35 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { Hero } from '../hero';
-import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { HeroService } from '../hero.service';
-import { MessageService } from '../message.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-heroes',
   standalone: true,
-  imports: [HeroDetailComponent, NgFor],
+  imports: [NgFor, RouterModule],
   templateUrl: './heroes.component.html',
   // styleUrl: './heroes.component.css'
   styleUrls: ['./heroes.component.css'],
 })
-export class HeroesComponent {
-  selectedHero?: Hero;
-
+export class HeroesComponent implements OnInit {
   heroes: Hero[] = [];
 
-  constructor(
-    private heroService: HeroService,
-    private messageService: MessageService
-  ) {}
+  constructor(private heroService: HeroService) {}
 
   ngOnInit(): void {
     this.getHeroes();
-  }
-
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
   }
 
   getHeroes(): void {
