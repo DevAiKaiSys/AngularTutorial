@@ -46,6 +46,25 @@
     </div>
 
     <button type="submit" class="btn btn-success">Submit</button>
+    <button
+      type="button"
+      class="btn btn-default"
+      (click)="newHero(); heroForm.reset()"
+    >
+      New Hero
+    </button>
+    <em>with</em> reset &nbsp;&nbsp;
+    <button type="button" class="btn btn-default" (click)="newHero()">
+      New Hero
+    </button>
+    <em>without</em> reset
+
+    <!-- NOT SHOWN IN DOCS -->
+    <div>
+      <hr />
+      Name via form.controls = {{ showFormControls(heroForm) }}
+    </div>
+    <!-- - -->
   </form>
 </div>
 
