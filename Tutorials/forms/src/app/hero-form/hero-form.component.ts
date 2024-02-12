@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { Hero } from '../hero';
-import { NgFor } from '@angular/common';
+import { JsonPipe, NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-hero-form',
   standalone: true,
-  imports: [NgFor, FormsModule],
+  imports: [NgFor, FormsModule, JsonPipe],
   templateUrl: './hero-form.component.html',
   // styleUrl: './hero-form.component.css',
   styleUrls: ['./hero-form.component.css'],
