@@ -31,3 +31,8 @@ respond to user actions
 [Communicating with @Output](https://angular.dev/tutorials/learn-angular/9-output)
 
 Trigger events by calling the emit method.
+
+[Deferrable Views](https://angular.dev/tutorials/learn-angular/10-deferrable-views)
+
+Deferrable views have a number of trigger options. Add a viewport trigger so the content will defer load once it enters the viewport.
+
