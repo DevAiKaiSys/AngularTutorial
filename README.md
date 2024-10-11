@@ -39,3 +39,7 @@ Deferrable views have a number of trigger options. Add a viewport trigger so the
 [Validating forms](https://angular.dev/tutorials/learn-angular/18-forms-validation)
 
 validate the inputs to ensure the correct data is submitted.
+
+[Formatting data with pipes](https://angular.dev/tutorials/learn-angular/23-pipes-format-data)
+
+transform data declaratively with [Built-in Pipes](https://angular.dev/guide/templates/pipes#built-in-pipes)
