@@ -27,3 +27,7 @@ handles the form's interactions
 [Event handling](https://angular.dev/tutorials/learn-angular/7-event-handling)
 
 respond to user actions
+
+[Communicating with @Output](https://angular.dev/tutorials/learn-angular/9-output)
+
+Trigger events by calling the emit method.
