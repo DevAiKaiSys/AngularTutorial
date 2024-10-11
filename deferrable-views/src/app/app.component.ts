@@ -15,8 +15,17 @@ import { ArticleCommentsComponent } from './article-comments.component';
       </article>
 
       <!-- <article-comments /> -->
+      <!-- @defer {
+      <article-comments />
+      } -->
       @defer {
       <article-comments />
+      } @placeholder (minimum 1s) {
+      <p>Placeholder for comments</p>
+      } @loading (minimum 1s; after 500ms) {
+      <p>Loading comments...</p>
+      } @error {
+      <p>Failed to load comments</p>
       }
     </div>
   `,
