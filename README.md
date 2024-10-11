@@ -15,3 +15,7 @@ The direction of the data sharing is from parent component to child component.
 add property binding to a template and use it to pass dynamic data to components.
 
 display values (properties and Input values) in a template using interpolation.
+
+[Angular services](https://angular.dev/tutorials/first-app/09-services#inject-the-new-service-into-homecomponent)
+
+Inject the new service into component
