@@ -23,3 +23,7 @@ Inject the new service into component
 [Integrate Angular forms](https://angular.dev/tutorials/first-app/12-forms)
 
 handles the form's interactions
+
+[Event handling](https://angular.dev/tutorials/learn-angular/7-event-handling)
+
+respond to user actions
