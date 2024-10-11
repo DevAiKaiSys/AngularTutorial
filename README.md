@@ -36,3 +36,6 @@ Trigger events by calling the emit method.
 
 Deferrable views have a number of trigger options. Add a viewport trigger so the content will defer load once it enters the viewport.
 
+[Validating forms](https://angular.dev/tutorials/learn-angular/18-forms-validation)
+
+validate the inputs to ensure the correct data is submitted.
