@@ -8,6 +8,10 @@ define properties that represent data about a single model.
 
 [Add property binding to components](https://angular.dev/tutorials/first-app/06-property-binding)
 
+[Add dynamic values to templates](https://angular.dev/tutorials/first-app/07-dynamic-template-values)
+
 The direction of the data sharing is from parent component to child component.
 
 add property binding to a template and use it to pass dynamic data to components.
+
+display values (properties and Input values) in a template using interpolation.
