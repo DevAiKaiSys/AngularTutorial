@@ -19,3 +19,7 @@ display values (properties and Input values) in a template using interpolation.
 [Angular services](https://angular.dev/tutorials/first-app/09-services#inject-the-new-service-into-homecomponent)
 
 Inject the new service into component
+
+[Integrate Angular forms](https://angular.dev/tutorials/first-app/12-forms)
+
+handles the form's interactions
