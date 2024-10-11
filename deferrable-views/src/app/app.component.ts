@@ -18,7 +18,18 @@ import { ArticleCommentsComponent } from './article-comments.component';
       <!-- @defer {
       <article-comments />
       } -->
-      @defer {
+      <!-- @defer {
+      <article-comments />
+      } @placeholder (minimum 1s) {
+      <p>Placeholder for comments</p>
+      } @loading (minimum 1s; after 500ms) {
+      <p>Loading comments...</p>
+      } @error {
+      <p>Failed to load comments</p>
+      } -->
+      <button type="button" #showComments>Show all comments</button>
+
+      @defer (on hover; on interaction(showComments)) {
       <article-comments />
       } @placeholder (minimum 1s) {
       <p>Placeholder for comments</p>
